@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="devconfBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="confAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <filter id="glowC" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#devconfBg)" />
+  <circle cx="250" cy="150" r="180" fill="#38bdf8" opacity="0.12" filter="url(#glowC)" />
+  <circle cx="950" cy="480" r="220" fill="#2563eb" opacity="0.10" filter="url(#glowC)" />
+
+  <!-- App Window -->
+  <g transform="translate(100, 60)">
+    <rect width="1000" height="555" rx="16" fill="#090d16" stroke="#1e293b" stroke-width="1.5" />
+
+    <!-- Window Bar -->
+    <rect width="1000" height="48" rx="16" fill="#131c2e" />
+    <rect y="36" width="1000" height="12" fill="#131c2e" />
+    <circle cx="28" cy="24" r="6" fill="#ef4444" />
+    <circle cx="48" cy="24" r="6" fill="#f59e0b" />
+    <circle cx="68" cy="24" r="6" fill="#10b981" />
+
+    <rect x="280" y="10" width="440" height="28" rx="6" fill="#090d16" stroke="#1e293b" />
+    <text x="500" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">
+      mabdullah404.github.io/Assignment-01
+    </text>
+
+    <!-- Interior Hero Preview -->
+    <g transform="translate(50, 75)">
+      <!-- Navbar inside -->
+      <g transform="translate(0, 0)">
+        <text x="0" y="26" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="900">
+          DEVCONF <tspan fill="#38bdf8">2026</tspan>
+        </text>
+
+        <g transform="translate(500, 10)">
+          <text x="0" y="16" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13">Speakers</text>
+          <text x="75" y="16" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Schedule</text>
+          <text x="150" y="16" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Tracks</text>
+          <text x="215" y="16" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Venue</text>
+          <rect x="275" y="-6" width="115" height="32" rx="16" fill="url(#confAccent)" />
+          <text x="332" y="15" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Register Now</text>
+        </g>
+      </g>
+
+      <!-- Conference Banner -->
+      <g transform="translate(0, 70)">
+        <rect width="900" height="370" rx="14" fill="#0f172a" stroke="#1e293b" />
+
+        <text x="50" y="70" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="2">
+          THE PREMIER DEVELOPER CONFERENCE
+        </text>
+
+        <text x="50" y="125" fill="#ffffff" font-family="system-ui, sans-serif" font-size="40" font-weight="900">
+          Innovate, Connect &amp; Build
+        </text>
+
+        <text x="50" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="16" max-width="600">
+          Join leading web engineers, designers, and innovators for 3 days of deep-dive talks, hands-on workshops, and networking.
+        </text>
+
+        <!-- Stats Boxes -->
+        <g transform="translate(50, 220)">
+          <rect x="0" y="0" width="160" height="90" rx="10" fill="#131e33" stroke="#1e293b" />
+          <text x="20" y="42" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="28" font-weight="900">25+</text>
+          <text x="20" y="66" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Keynote Speakers</text>
+
+          <rect x="180" y="0" width="160" height="90" rx="10" fill="#131e33" stroke="#1e293b" />
+          <text x="200" y="42" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="28" font-weight="900">1,200+</text>
+          <text x="200" y="66" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Attendees</text>
+
+          <rect x="360" y="0" width="160" height="90" rx="10" fill="#131e33" stroke="#1e293b" />
+          <text x="380" y="42" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="28" font-weight="900">30+</text>
+          <text x="380" y="66" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Technical Tracks</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

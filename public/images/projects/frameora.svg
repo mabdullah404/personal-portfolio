@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="frameoraBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090a0f" />
+      <stop offset="50%" stop-color="#12131a" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+    <linearGradient id="photo1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="photo2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="50%" stop-color="#831843" />
+      <stop offset="100%" stop-color="#18181b" />
+    </linearGradient>
+    <linearGradient id="photo3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <filter id="glowF" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#frameoraBg)" />
+
+  <circle cx="1050" cy="150" r="240" fill="#a855f7" opacity="0.10" filter="url(#glowF)" />
+  <circle cx="150" cy="500" r="260" fill="#a3e635" opacity="0.08" filter="url(#glowF)" />
+
+  <!-- App Window -->
+  <g transform="translate(100, 60)">
+    <rect width="1000" height="555" rx="16" fill="#0d0e14" stroke="#27272a" stroke-width="1.5" />
+
+    <!-- Window Bar -->
+    <rect width="1000" height="48" rx="16" fill="#18181b" />
+    <rect y="36" width="1000" height="12" fill="#18181b" />
+    <circle cx="28" cy="24" r="6" fill="#ef4444" />
+    <circle cx="48" cy="24" r="6" fill="#f59e0b" />
+    <circle cx="68" cy="24" r="6" fill="#10b981" />
+
+    <rect x="300" y="10" width="400" height="28" rx="6" fill="#090a0f" stroke="#27272a" />
+    <text x="500" y="28" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">
+      frameora.gallery / curated
+    </text>
+
+    <!-- Navigation inside Frameora -->
+    <g transform="translate(50, 75)">
+      <text x="0" y="28" fill="#fafafa" font-family="'Times New Roman', serif" font-style="italic" font-size="28" font-weight="600">
+        FRAMEORA
+      </text>
+      <text x="175" y="27" fill="#a3e635" font-family="system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="2">
+        • VISUAL STUDIO
+      </text>
+
+      <g transform="translate(620, 10)">
+        <text x="0" y="16" fill="#e4e4e7" font-family="system-ui, sans-serif" font-size="13">Stories</text>
+        <text x="70" y="16" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="13">Exhibitions</text>
+        <text x="165" y="16" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="13">Artists</text>
+        <rect x="235" y="-4" width="70" height="28" rx="14" fill="#27272a" stroke="#3f3f46" />
+        <text x="270" y="15" fill="#fafafa" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">Dark UI</text>
+      </g>
+    </g>
+
+    <!-- Gallery Masonry Preview -->
+    <g transform="translate(50, 140)">
+      <!-- Large featured photo card -->
+      <g transform="translate(0, 0)">
+        <rect width="420" height="360" rx="12" fill="url(#photo1)" stroke="#27272a" />
+        <!-- Overlay -->
+        <rect y="260" width="420" height="100" rx="12" fill="#090a0f" fill-opacity="0.85" />
+        <text x="24" y="295" fill="#ffffff" font-family="system-ui, sans-serif" font-size="17" font-weight="600">
+          Solitude in the High Peaks
+        </text>
+        <text x="24" y="320" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="12">
+          f/2.8 • 1/500s • ISO 100 • 35mm Prime
+        </text>
+        <rect x="330" y="285" width="65" height="22" rx="4" fill="#27272a" />
+        <text x="362" y="300" fill="#a3e635" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">VIEW</text>
+      </g>
+
+      <!-- Second photo card -->
+      <g transform="translate(440, 0)">
+        <rect width="460" height="170" rx="12" fill="url(#photo2)" stroke="#27272a" />
+        <rect y="100" width="460" height="70" rx="12" fill="#090a0f" fill-opacity="0.85" />
+        <text x="20" y="128" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="600">
+          Neon Horizons &amp; Nocturnal Echoes
+        </text>
+        <text x="20" y="150" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="12">
+          Tokyo Series • 50mm f/1.4
+        </text>
+      </g>
+
+      <!-- Third photo card -->
+      <g transform="translate(440, 190)">
+        <rect width="460" height="170" rx="12" fill="url(#photo3)" stroke="#27272a" />
+        <rect y="100" width="460" height="70" rx="12" fill="#090a0f" fill-opacity="0.85" />
+        <text x="20" y="128" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="600">
+          Emerald Canopy: The Silent Rainforest
+        </text>
+        <text x="20" y="150" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="12">
+          Macro Series • 90mm f/2.8
+        </text>
+      </g>
+    </g>
+
+    <!-- Development Badge inside -->
+    <g transform="translate(50, 510)">
+      <rect width="160" height="26" rx="13" fill="#3f2305" stroke="#b45309" />
+      <circle cx="14" cy="13" r="4" fill="#f59e0b" />
+      <text x="90" y="17" fill="#fde68a" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">
+        IN ACTIVE DEVELOPMENT
+      </text>
+    </g>
+  </g>
+</svg>

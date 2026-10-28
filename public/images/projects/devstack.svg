@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="devstackBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="stackGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#9333ea" />
+    </linearGradient>
+    <filter id="glowD" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#devstackBg)" />
+  <circle cx="200" cy="180" r="180" fill="#ec4899" opacity="0.12" filter="url(#glowD)" />
+  <circle cx="1000" cy="450" r="220" fill="#9333ea" opacity="0.10" filter="url(#glowD)" />
+
+  <!-- App Window -->
+  <g transform="translate(100, 60)">
+    <rect width="1000" height="555" rx="16" fill="#0b0f19" stroke="#334155" stroke-width="1.5" />
+
+    <!-- Window top bar -->
+    <rect width="1000" height="48" rx="16" fill="#131d2e" />
+    <rect y="36" width="1000" height="12" fill="#131d2e" />
+    <circle cx="28" cy="24" r="6" fill="#ef4444" />
+    <circle cx="48" cy="24" r="6" fill="#f59e0b" />
+    <circle cx="68" cy="24" r="6" fill="#10b981" />
+
+    <rect x="260" y="10" width="480" height="28" rx="6" fill="#090d16" stroke="#1e293b" />
+    <text x="500" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">
+      development-stack-assignment-05.netlify.app
+    </text>
+
+    <!-- Header Inside -->
+    <g transform="translate(50, 75)">
+      <text x="0" y="28" fill="#ffffff" font-family="system-ui, sans-serif" font-size="26" font-weight="800">
+        Dev<tspan fill="#ec4899">Stack</tspan>
+      </text>
+
+      <!-- Headline -->
+      <text x="0" y="75" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="34" font-weight="900">
+        Build Your Ideal
+      </text>
+      <text x="0" y="115" fill="url(#stackGrad)" font-family="system-ui, sans-serif" font-size="34" font-weight="900">
+        Development Stack
+      </text>
+
+      <text x="0" y="150" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14">
+        Explore frontend, backend, database, and tooling options to assemble your stack.
+      </text>
+
+      <!-- Action Buttons -->
+      <g transform="translate(0, 175)">
+        <rect width="170" height="40" rx="8" fill="url(#stackGrad)" />
+        <text x="85" y="25" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">
+          Explore Technologies
+        </text>
+
+        <rect x="185" y="0" width="120" height="40" rx="8" fill="#1e293b" stroke="#334155" />
+        <text x="245" y="25" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+          Learn More
+        </text>
+      </g>
+    </g>
+
+    <!-- Right Side Interactive Stack Builder Preview -->
+    <g transform="translate(580, 80)">
+      <rect width="370" height="420" rx="14" fill="#131b2c" stroke="#334155" />
+      <text x="25" y="35" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="16" font-weight="700">
+        Your Assembled Stack (4 items)
+      </text>
+
+      <!-- Card 1 -->
+      <g transform="translate(20, 60)">
+        <rect width="330" height="65" rx="10" fill="#0b1120" stroke="#1e293b" />
+        <circle cx="35" cy="32" r="16" fill="#38bdf8" fill-opacity="0.2" />
+        <text x="35" y="37" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" font-weight="800" text-anchor="middle">R</text>
+        <text x="65" y="28" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="14" font-weight="600">React 19</text>
+        <text x="65" y="46" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Frontend UI Framework</text>
+        <rect x="250" y="20" width="65" height="24" rx="6" fill="#064e3b" />
+        <text x="282" y="36" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Added</text>
+      </g>
+
+      <!-- Card 2 -->
+      <g transform="translate(20, 140)">
+        <rect width="330" height="65" rx="10" fill="#0b1120" stroke="#1e293b" />
+        <circle cx="35" cy="32" r="16" fill="#a855f7" fill-opacity="0.2" />
+        <text x="35" y="37" fill="#c084fc" font-family="system-ui, sans-serif" font-size="12" font-weight="800" text-anchor="middle">TW</text>
+        <text x="65" y="28" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Tailwind CSS</text>
+        <text x="65" y="46" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Utility-First Styling</text>
+        <rect x="250" y="20" width="65" height="24" rx="6" fill="#064e3b" />
+        <text x="282" y="36" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Added</text>
+      </g>
+
+      <!-- Card 3 -->
+      <g transform="translate(20, 220)">
+        <rect width="330" height="65" rx="10" fill="#0b1120" stroke="#1e293b" />
+        <circle cx="35" cy="32" r="16" fill="#10b981" fill-opacity="0.2" />
+        <text x="35" y="37" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="800" text-anchor="middle">N</text>
+        <text x="65" y="28" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Node.js &amp; Express</text>
+        <text x="65" y="46" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Server-Side Runtime</text>
+        <rect x="250" y="20" width="65" height="24" rx="6" fill="#064e3b" />
+        <text x="282" y="36" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Added</text>
+      </g>
+
+      <!-- Toast Notification Simulation -->
+      <g transform="translate(20, 310)">
+        <rect width="330" height="55" rx="10" fill="#064e3b" stroke="#059669" />
+        <circle cx="35" cy="28" r="12" fill="#10b981" />
+        <text x="35" y="33" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="900" text-anchor="middle">✓</text>
+        <text x="60" y="26" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="600">TypeScript added to stack</text>
+        <text x="60" y="42" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="11">Live toast feedback active</text>
+      </g>
+    </g>
+  </g>
+</svg>
