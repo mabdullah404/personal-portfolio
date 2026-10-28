@@ -7,7 +7,7 @@ export function About() {
   const { aboutStory, socials, hobbies } = profileData;
 
   return (
-    <section id="about" className="scroll-mt-24 py-20 border-t border-slate-200 bg-slate-50/50 dark:border-zinc-900 dark:bg-zinc-950">
+    <section id="about" className="scroll-mt-20 py-16 sm:py-20 border-t border-slate-200 bg-slate-50/50 dark:border-zinc-900 dark:bg-zinc-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

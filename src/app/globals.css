@@ -76,3 +76,15 @@ html.light ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; 
 
 html.dark  ::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
 html.light ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* ─── Webkit Autofill Override ─── */
+html.dark input:-webkit-autofill,
+html.dark input:-webkit-autofill:hover, 
+html.dark input:-webkit-autofill:focus,
+html.dark textarea:-webkit-autofill,
+html.dark textarea:-webkit-autofill:hover,
+html.dark textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #f4f4f5 !important;
+  -webkit-box-shadow: 0 0 0px 1000px #090a0f inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}

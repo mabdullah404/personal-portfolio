@@ -53,7 +53,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="scroll-mt-24 py-20 border-t border-slate-200 bg-white dark:border-zinc-900 dark:bg-zinc-950">
+    <section id="contact" className="scroll-mt-20 py-16 sm:py-20 border-t border-slate-200 bg-white dark:border-zinc-900 dark:bg-zinc-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -222,7 +222,7 @@ export function Contact() {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="e.g. Abdullah"
-                      className={`w-full rounded-xl bg-slate-50 border px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 dark:bg-zinc-950 dark:border-zinc-800 dark:text-zinc-100 dark:placeholder-zinc-600 dark:focus:ring-red-400 ${
+                      className={`w-full rounded-xl bg-slate-50 border px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:bg-white focus:text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 dark:bg-zinc-950 dark:border-zinc-800 dark:text-zinc-100 dark:placeholder-zinc-500 dark:focus:bg-zinc-900 dark:focus:text-white dark:focus:border-red-500 dark:focus:ring-red-500/20 ${
                         errors.name ? 'border-red-500' : 'border-slate-200 dark:border-zinc-800'
                       }`}
                     />
@@ -240,7 +240,7 @@ export function Contact() {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="name@domain.com"
-                      className={`w-full rounded-xl bg-slate-50 border px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 dark:bg-zinc-950 dark:border-zinc-800 dark:text-zinc-100 dark:placeholder-zinc-600 dark:focus:ring-red-400 ${
+                      className={`w-full rounded-xl bg-slate-50 border px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:bg-white focus:text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 dark:bg-zinc-950 dark:border-zinc-800 dark:text-zinc-100 dark:placeholder-zinc-500 dark:focus:bg-zinc-900 dark:focus:text-white dark:focus:border-red-500 dark:focus:ring-red-500/20 ${
                         errors.email ? 'border-red-500' : 'border-slate-200 dark:border-zinc-800'
                       }`}
                     />
@@ -260,7 +260,7 @@ export function Contact() {
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                     placeholder="Project inquiry / Internship / Hello"
-                    className={`w-full rounded-xl bg-slate-50 border px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 dark:bg-zinc-950 dark:border-zinc-800 dark:text-zinc-100 dark:placeholder-zinc-600 dark:focus:ring-red-400 ${
+                    className={`w-full rounded-xl bg-slate-50 border px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:bg-white focus:text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 dark:bg-zinc-950 dark:border-zinc-800 dark:text-zinc-100 dark:placeholder-zinc-500 dark:focus:bg-zinc-900 dark:focus:text-white dark:focus:border-red-500 dark:focus:ring-red-500/20 ${
                       errors.subject ? 'border-red-500' : 'border-slate-200 dark:border-zinc-800'
                     }`}
                   />
@@ -278,7 +278,7 @@ export function Contact() {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Describe your project, question, or proposal..."
-                    className={`w-full rounded-xl bg-slate-50 border px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 dark:bg-zinc-950 dark:border-zinc-800 dark:text-zinc-100 dark:placeholder-zinc-600 dark:focus:ring-red-400 resize-none ${
+                    className={`w-full rounded-xl bg-slate-50 border px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:bg-white focus:text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 dark:bg-zinc-950 dark:border-zinc-800 dark:text-zinc-100 dark:placeholder-zinc-500 dark:focus:bg-zinc-900 dark:focus:text-white dark:focus:border-red-500 dark:focus:ring-red-500/20 resize-none ${
                       errors.message ? 'border-red-500' : 'border-slate-200 dark:border-zinc-800'
                     }`}
                   />
