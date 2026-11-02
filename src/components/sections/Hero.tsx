@@ -19,6 +19,7 @@ import { profileData } from '@/data/profile';
 export function Hero() {
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
   const [imgError, setImgError] = useState(false);
+  const [isTapped, setIsTapped] = useState(false);
 
   function handleResumeClick() {
     try {
@@ -161,21 +162,38 @@ export function Hero() {
 
           {/* Profile Photo / Circular Avatar Slot */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end mt-4 lg:mt-0">
-            <div className="relative group flex items-center justify-center cursor-pointer">
-              {/* Soft Ambient Red Glow */}
+            <div 
+              className="relative group flex items-center justify-center cursor-pointer profile-avatar-float select-none"
+              onClick={() => setIsTapped((prev) => !prev)}
+              role="button"
+              tabIndex={0}
+              aria-label="Toggle profile avatar animation"
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  setIsTapped((prev) => !prev);
+                }
+              }}
+            >
+              {/* Soft Ambient Red Glow with continuous breathing on phone & desktop */}
               <div 
                 aria-hidden="true" 
-                className="absolute -inset-6 rounded-full bg-red-500/10 blur-3xl transition-all duration-700 ease-in-out group-hover:bg-red-500/30 group-hover:blur-3xl group-hover:scale-110 pointer-events-none" 
+                className={`absolute -inset-6 rounded-full bg-red-500/20 blur-3xl transition-all duration-700 ease-in-out pointer-events-none profile-avatar-glow ${
+                  isTapped ? 'scale-125 opacity-90 blur-3xl bg-red-500/40' : 'group-hover:bg-red-500/40 group-hover:scale-120 group-hover:blur-3xl'
+                }`} 
               />
               
-              {/* Subtle Red Accent Ring */}
+              {/* Subtle Red Accent Ring with continuous breathing glow */}
               <div 
                 aria-hidden="true" 
-                className="absolute -inset-1.5 rounded-full border-2 border-red-500/30 transition-all duration-700 ease-in-out group-hover:border-red-500 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(239,68,68,0.4)]" 
+                className={`absolute -inset-1.5 rounded-full border-2 transition-all duration-700 ease-in-out profile-avatar-ring ${
+                  isTapped ? 'border-red-500 scale-105 shadow-[0_0_35px_rgba(239,68,68,0.6)]' : 'group-hover:border-red-500 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(239,68,68,0.5)]'
+                }`} 
               />
 
               {/* Main Circular Image Frame */}
-              <div className="relative aspect-square w-56 sm:w-72 md:w-80 rounded-full border-2 border-slate-200 bg-white p-2 shadow-xl transition-all duration-700 ease-in-out group-hover:border-red-400 group-hover:shadow-2xl dark:border-zinc-800 dark:bg-zinc-950">
+              <div className={`relative aspect-square w-56 sm:w-72 md:w-80 rounded-full border-2 border-slate-200 bg-white p-2 shadow-xl transition-all duration-700 ease-in-out group-hover:border-red-400 group-hover:shadow-2xl dark:border-zinc-800 dark:bg-zinc-950 ${
+                isTapped ? 'border-red-400 shadow-2xl scale-105' : ''
+              }`}>
                 {/* Inner Circle Image Container */}
                 <div className="relative h-full w-full overflow-hidden rounded-full bg-slate-100 border border-slate-200 dark:bg-zinc-900 dark:border-zinc-800/80">
                   {!imgError ? (
@@ -184,7 +202,9 @@ export function Hero() {
                       alt={profileData.name}
                       fill
                       priority
-                      className="object-cover object-top transition-transform duration-700 ease-in-out group-hover:scale-105"
+                      className={`object-cover object-top transition-transform duration-700 ease-in-out group-hover:scale-110 ${
+                        isTapped ? 'scale-110' : ''
+                      }`}
                       sizes="(max-width: 640px) 224px, 320px"
                       onError={() => setImgError(true)}
                     />

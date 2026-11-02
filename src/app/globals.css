@@ -88,3 +88,49 @@ html.dark textarea:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #090a0f inset !important;
   transition: background-color 5000s ease-in-out 0s;
 }
+
+/* ─── Profile Avatar Breathing & Touch Animations (Active on Mobile & Desktop) ─── */
+@keyframes profilePulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 0.7;
+  }
+}
+
+@keyframes profileRingBreath {
+  0%, 100% {
+    transform: scale(1);
+    border-color: rgba(239, 68, 68, 0.35);
+    box-shadow: 0 0 18px rgba(239, 68, 68, 0.25);
+  }
+  50% {
+    transform: scale(1.035);
+    border-color: rgba(239, 68, 68, 0.85);
+    box-shadow: 0 0 35px rgba(239, 68, 68, 0.55);
+  }
+}
+
+@keyframes profileFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.profile-avatar-glow {
+  animation: profilePulseGlow 4s ease-in-out infinite;
+}
+
+.profile-avatar-ring {
+  animation: profileRingBreath 4s ease-in-out infinite;
+}
+
+.profile-avatar-float {
+  animation: profileFloat 5s ease-in-out infinite;
+}
