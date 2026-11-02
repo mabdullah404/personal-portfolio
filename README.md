@@ -10,7 +10,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg?style=for-the-badge)](LICENSE)
 
-[🌐 View Live Portfolio](https://personal-portfolio-omega-seven-70.vercel.app/) • [📁 Explore Projects](#-featured-projects) • [📬 Get In Touch](#-contact--connect)
+[🌐 View Live Portfolio](https://personal-portfolio-green-one-68.vercel.app/) • [📁 Explore Projects](#-featured-projects) • [📬 Get In Touch](#-contact--connect)
 
 </div>
 
