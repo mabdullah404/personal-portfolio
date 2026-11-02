@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="civicBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="indigoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="civicGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="24" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="675" fill="url(#civicBg)" />
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="240" cy="160" r="200" fill="#6366f1" opacity="0.18" filter="url(#civicGlow)" />
+  <circle cx="980" cy="460" r="220" fill="#10b981" opacity="0.12" filter="url(#civicGlow)" />
+  <circle cx="600" cy="300" r="160" fill="#f59e0b" opacity="0.08" filter="url(#civicGlow)" />
+
+  <!-- Browser Window Mockup -->
+  <g transform="translate(100, 50)">
+    <rect width="1000" height="575" rx="16" fill="#0b0f19" stroke="#1e293b" stroke-width="1.5" />
+
+    <!-- Window Top Chrome -->
+    <rect width="1000" height="46" rx="16" fill="#111827" />
+    <rect y="34" width="1000" height="12" fill="#111827" />
+    <circle cx="28" cy="23" r="6" fill="#ef4444" />
+    <circle cx="48" cy="23" r="6" fill="#f59e0b" />
+    <circle cx="68" cy="23" r="6" fill="#10b981" />
+
+    <!-- Address Bar -->
+    <rect x="250" y="9" width="500" height="28" rx="7" fill="#080c14" stroke="#1f2937" />
+    <text x="500" y="27" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" font-weight="500">
+      social-development-platform.vercel.app
+    </text>
+
+    <!-- App Navigation Inside -->
+    <g transform="translate(40, 64)">
+      <!-- Brand Logo -->
+      <rect x="0" y="0" width="36" height="36" rx="10" fill="url(#indigoGrad)" />
+      <path d="M10 18 L15 18 L17 12 L20 24 L22 18 L26 18" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      <text x="48" y="25" fill="#f9fafb" font-family="system-ui, sans-serif" font-size="20" font-weight="800">
+        Civic<tspan fill="#818cf8">Pulse</tspan>
+      </text>
+      <rect x="156" y="8" width="60" height="20" rx="6" fill="#312e81" stroke="#4338ca" />
+      <text x="186" y="22" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="9" font-weight="700" text-anchor="middle">RELIEF</text>
+
+      <!-- Nav Links -->
+      <text x="540" y="23" fill="#818cf8" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Explore Drives</text>
+      <text x="660" y="23" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="13">Host Event</text>
+      <text x="760" y="23" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="13">Volunteer Hub</text>
+
+      <!-- Auth Pill -->
+      <rect x="850" y="2" width="110" height="32" rx="10" fill="url(#indigoGrad)" />
+      <text x="905" y="22" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">+ Create Drive</text>
+    </g>
+
+    <!-- Divider -->
+    <line x1="40" y1="116" x2="960" y2="116" stroke="#1f2937" stroke-width="1" />
+
+    <!-- Hero Banner Inside Window -->
+    <g transform="translate(40, 134)">
+      <text x="0" y="32" fill="#f9fafb" font-family="system-ui, sans-serif" font-size="28" font-weight="800">
+        Grassroots Action &amp; <tspan fill="#818cf8">Volunteer Network</tspan>
+      </text>
+      <text x="0" y="58" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">
+        Unite with citizens to create, join, and track verified local neighborhood humanitarian initiatives.
+      </text>
+
+      <!-- Category Filter Pills -->
+      <g transform="translate(0, 80)">
+        <rect x="0" y="0" width="85" height="28" rx="8" fill="#4f46e5" />
+        <text x="42" y="18" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">All Causes</text>
+
+        <rect x="95" y="0" width="110" height="28" rx="8" fill="#1e293b" stroke="#334155" />
+        <text x="150" y="18" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Tree Plantation</text>
+
+        <rect x="215" y="0" width="105" height="28" rx="8" fill="#1e293b" stroke="#334155" />
+        <text x="267" y="18" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Blanket Relief</text>
+
+        <rect x="330" y="0" width="100" height="28" rx="8" fill="#1e293b" stroke="#334155" />
+        <text x="380" y="18" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Medical Camp</text>
+
+        <rect x="440" y="0" width="95" height="28" rx="8" fill="#1e293b" stroke="#334155" />
+        <text x="487" y="18" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Food Share</text>
+      </g>
+    </g>
+
+    <!-- Cards Grid -->
+    <g transform="translate(40, 260)">
+      <!-- Card 1: Tree Plantation -->
+      <g transform="translate(0, 0)">
+        <rect width="290" height="225" rx="14" fill="#111827" stroke="#1f2937" stroke-width="1.2" />
+        <rect width="290" height="105" rx="14" fill="#064e3b" />
+        <rect y="90" width="290" height="15" fill="#064e3b" />
+        <!-- Badge -->
+        <rect x="12" y="12" width="90" height="20" rx="6" fill="#047857" />
+        <text x="57" y="26" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">GREEN EARTH</text>
+        <text x="16" y="85" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Urban Tree Plantation Drive</text>
+        
+        <text x="16" y="130" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="11">📍 Uttara Sector 11, Dhaka</text>
+        <text x="16" y="150" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="11">📅 Next Saturday • 45 Registered</text>
+
+        <rect x="16" y="172" width="258" height="6" rx="3" fill="#1f2937" />
+        <rect x="16" y="172" width="190" height="6" rx="3" fill="url(#emeraldGrad)" />
+        <text x="16" y="200" fill="#34d399" font-family="system-ui, sans-serif" font-size="10" font-weight="600">74% Target Reached</text>
+      </g>
+
+      <!-- Card 2: Winter Relief -->
+      <g transform="translate(315, 0)">
+        <rect width="290" height="225" rx="14" fill="#111827" stroke="#1f2937" stroke-width="1.2" />
+        <rect width="290" height="105" rx="14" fill="#312e81" />
+        <rect y="90" width="290" height="15" fill="#312e81" />
+        <!-- Badge -->
+        <rect x="12" y="12" width="85" height="20" rx="6" fill="#4338ca" />
+        <text x="54" y="26" fill="#c7d2fe" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">WINTER WARMTH</text>
+        <text x="16" y="85" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Blanket Distribution Mirpur</text>
+
+        <text x="16" y="130" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="11">📍 Mirpur 10 Circle, Dhaka</text>
+        <text x="16" y="150" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="11">📅 Verified Initiative • 82 Volunteers</text>
+
+        <rect x="16" y="172" width="258" height="6" rx="3" fill="#1f2937" />
+        <rect x="16" y="172" width="230" height="6" rx="3" fill="url(#indigoGrad)" />
+        <text x="16" y="200" fill="#818cf8" font-family="system-ui, sans-serif" font-size="10" font-weight="600">89% Target Reached</text>
+      </g>
+
+      <!-- Card 3: Free Eye Checkup -->
+      <g transform="translate(630, 0)">
+        <rect width="290" height="225" rx="14" fill="#111827" stroke="#1f2937" stroke-width="1.2" />
+        <rect width="290" height="105" rx="14" fill="#78350f" />
+        <rect y="90" width="290" height="15" fill="#78350f" />
+        <!-- Badge -->
+        <rect x="12" y="12" width="85" height="20" rx="6" fill="#b45309" />
+        <text x="54" y="26" fill="#fde68a" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">MEDICAL CAMP</text>
+        <text x="16" y="85" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Free Healthcare &amp; Eye Camp</text>
+
+        <text x="16" y="130" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="11">📍 Old Dhaka Community Center</text>
+        <text x="16" y="150" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="11">📅 Next Sunday • 30 Doctors</text>
+
+        <rect x="16" y="172" width="258" height="6" rx="3" fill="#1f2937" />
+        <rect x="16" y="172" width="150" height="6" rx="3" fill="url(#amberGrad)" />
+        <text x="16" y="200" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="10" font-weight="600">58% Capacity Enrolled</text>
+      </g>
+    </g>
+  </g>
+</svg>

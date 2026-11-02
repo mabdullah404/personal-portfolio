@@ -30,10 +30,10 @@ export function Experience() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <span className="text-sm font-semibold text-slate-900 dark:text-zinc-200">
-                      Project-Based &amp; Hands-On Development
+                      Hands-On Full-Stack &amp; Project Track
                     </span>
                     <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-mono text-slate-600 border border-slate-200 dark:bg-zinc-800 dark:text-zinc-400 dark:border-zinc-700">
-                      Transparent Status
+                      Active Development
                     </span>
                   </div>
                   <p className="text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">

@@ -15,10 +15,10 @@ export function Education() {
             <span>03 / Academic Background</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-zinc-100">
-            Verified <span className="text-red-600 dark:text-red-500">Education</span>
+            Educational <span className="text-red-600 dark:text-red-500">Qualifications</span>
           </h2>
-          <p className="text-base text-slate-600 dark:text-zinc-400 max-w-2xl">
-            My formal engineering degrees and academic grounding in computer science and software development.
+          <p className="text-sm sm:text-base text-slate-600 dark:text-zinc-400 max-w-2xl">
+            My formal engineering degrees and academic foundation in computer science and software development.
           </p>
         </div>
 

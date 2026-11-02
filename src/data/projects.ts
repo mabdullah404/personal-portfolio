@@ -2,163 +2,85 @@ import { Project } from '@/types';
 
 export const projectsData: Project[] = [
   {
-    id: "bazar-dor",
-    slug: "bazar-dor",
-    title: "Bazar Dor",
-    tagline: "Daily Commodity & Market Price Tracking Web Application",
-    shortDescription: "A focused web application helping users track daily market commodity prices, monitor grocery fluctuations, and plan household purchasing efficiently.",
-    detailedOverview: "Bazar Dor is a practical web application designed to address everyday shopping needs in Bangladesh. It provides a clean, user-friendly interface for browsing daily bazaar prices, comparing essential commodity rates, and categorizing market goods so users can make informed purchasing decisions without manual calculation.",
-    image: "/images/projects/bazar-dor.svg",
-    imageAlt: "Bazar Dor application screenshot and dashboard interface preview",
-    technologies: ["React", "Next.js", "JavaScript", "Tailwind CSS", "Responsive Design", "Vercel"],
+    id: "civicpulse",
+    slug: "civicpulse",
+    title: "CivicPulse",
+    tagline: "Grassroots Social Development & Community Events Platform",
+    shortDescription: "A high-impact community-driven event management platform where citizens unite to create, join, and track verified grassroots humanitarian initiatives in their local neighborhoods.",
+    detailedOverview: "CivicPulse is a full-stack social development platform built to empower local communities. It allows citizens and volunteer organizers to discover verified humanitarian initiatives, host community drives with future-date validation, manage volunteer sign-ups, and track collective community impact. The platform features strict authentication, an interactive organizer console, cause-based filtering, and persistent theme support.",
+    image: "/images/projects/civicpulse.svg",
+    imageAlt: "CivicPulse grassroots community event platform interface preview",
+    technologies: ["Next.js 16", "React", "JavaScript", "Tailwind CSS", "DaisyUI", "BetterAuth", "Node.js", "Express.js", "MongoDB Atlas", "JWT", "Vercel"],
     status: "Completed",
     featured: true,
-    liveUrl: "https://bazar-dor-project-omega.vercel.app/",
-    githubUrl: "https://github.com/mabdullah404/bazar-dor-project",
+    liveUrl: "https://social-development-platform.vercel.app",
+    githubUrl: "https://github.com/mabdullah404/social_devlopment_platform",
     keyFeatures: [
-      "Dynamic categorization of daily commodities (vegetables, fish, groceries, spices)",
-      "Price tracking table and card views with high readability",
-      "Fast responsive search and category filtering for quick lookups",
-      "Mobile-optimized layout for on-the-go price checks in the market",
-      "Clean UI visual tokens tailored for effortless scanning"
+      "Grassroots initiative discovery with cause-based filtering (Cleanup, Tree Plantation, Blanket Relief, Healthcare, Food Share)",
+      "Verified community event hosting with built-in future-date validation preventing expired scheduling",
+      "Organizer console for managing hosted initiatives with live modal editing and secure SweetAlert2 deletion",
+      "Volunteer event enrollment tracking sorted chronologically with capacity progress bars",
+      "Multi-provider authentication using BetterAuth (Email/Password with live validation & Google OAuth)",
+      "Dual-theme support (Dark/Light mode) with persistent localStorage sync"
     ],
     challenges: [
-      "Structuring price data so it can be updated easily and displayed with zero layout shift on mobile screens.",
-      "Ensuring that fast search and filtering remain smooth without unnecessary re-renders.",
-      "Designing an intuitive mobile-first experience accessible for users with varying digital familiarity."
+      "Implementing strict future-date validation and preventing expired event registrations across different time zones.",
+      "Integrating BetterAuth with MongoDB replicaSet while keeping session persistence reliable across page reloads without premature logout.",
+      "Structuring normalized database relationships between organizers, hosted events, and volunteer attendees."
     ],
     solutions: [
-      "Implemented modular React component architecture separating the search filter controls from the presentation cards.",
-      "Leveraged responsive CSS Grid and Flexbox with Tailwind CSS to ensure fluid table and card transformation across screen sizes.",
-      "Optimized state updates with clean client-side hooks to keep searching instantaneous."
+      "Engineered client and server timestamp validation middleware ensuring events can only be scheduled for future dates.",
+      "Configured centralized JWT authorization tokens with custom loading skeletons to maintain seamless authenticated states.",
+      "Developed modular RESTful API endpoints on Express.js with indexed MongoDB queries for rapid filtering and volunteer aggregation."
     ],
     improvements: [
-      "Integrate local price fluctuation charts showing 7-day and 30-day historical trends.",
-      "Add user shopping-list calculation where items can be checked off with total budget computation."
+      "Add automated email reminders and push notifications for volunteers 24 hours prior to registered events.",
+      "Incorporate geolocation mapping with interactive neighborhood radius search."
     ],
     futurePlans: [
-      "Connect with automated or crowdsourced daily market price APIs.",
-      "Support bilingual locale toggle (Bengali and English) for broader community accessibility."
+      "Launch a community donation escrow system for transparent fund tracking on relief drives.",
+      "Introduce volunteer digital achievement badges and downloadable participation certificates."
     ]
   },
   {
-    id: "devstack",
-    slug: "devstack",
-    title: "DevStack — Tech Stack Builder",
-    tagline: "Interactive Development Stack Assembler & Comparison Tool",
-    shortDescription: "An interactive web application enabling developers to explore frontend, backend, database, and tooling options, assemble customized stacks, and view instant feedback.",
-    detailedOverview: "DevStack (Assignment-05) is an interactive developer tool designed to eliminate technology selection fatigue. It lets engineers browse categorized modern technologies, compare trade-offs, add or remove tools from their personalized project stack in real-time with responsive toast feedback, and organize architectural choices efficiently.",
-    image: "/images/projects/devstack.svg",
-    imageAlt: "DevStack web application interactive builder screenshot",
-    technologies: ["React", "Vite", "Tailwind CSS", "JavaScript", "State Management", "Netlify"],
+    id: "matchiq",
+    slug: "matchiq",
+    title: "MatchIQ — Football Analytics & AI Prediction Platform",
+    tagline: "Full-Stack AI Football Intelligence & Poisson Prediction Engine",
+    shortDescription: "A comprehensive football analytics platform combining pure mathematical Dixon-Coles Poisson models, Google Gemini AI tactical reports, and live player intelligence.",
+    detailedOverview: "MatchIQ is a modern full-stack sports intelligence platform designed for deep match analysis and probabilistic match outcome forecasting. Built with Next.js App Router, Tailwind CSS, API-Football V3, MongoDB, and Google Gemini AI, it calculates multi-market probabilities (1X2, Over/Under, BTTS), simulates scorelines with Poisson distribution, and generates natural-language tactical reports.",
+    image: "/images/projects/matchiq.svg",
+    imageAlt: "MatchIQ AI football analytics and match prediction platform preview",
+    technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS", "Google Gemini AI", "MongoDB", "Mongoose", "API-Football V3", "Vercel"],
     status: "Completed",
     featured: true,
-    liveUrl: "https://development-stack-assignment-05.netlify.app/",
-    githubUrl: "https://github.com/mabdullah404/Assignment-05",
+    liveUrl: "https://football-prediction-platform-neon.vercel.app",
+    githubUrl: "https://github.com/mabdullah404/football_prediction-platform",
     keyFeatures: [
-      "Interactive technology catalog covering Frontend, Backend, Databases, and Tools",
-      "Dynamic stack accumulator enabling single-click addition and removal of technologies",
-      "Real-time toast notifications on state changes and tool updates",
-      "Responsive side-by-side comparison layout optimized across desktop and mobile screens",
-      "One-click 'Clear All' capability to reset custom architecture stacks"
+      "Dixon-Coles Poisson distribution mathematical prediction engine for 1X2 win probabilities, Over/Under, and BTTS",
+      "Google Gemini AI tactical analyst providing in-depth reports on attack vs. defense potency and key matchups",
+      "Interactive tactical football pitch displaying official confirmed starting XI and formations (4-3-3, 4-2-3-1)",
+      "Player Intelligence system with opponent H2H comparisons, season ratings, and form trends",
+      "Coverage across top European leagues (Premier League, La Liga, Champions League, Serie A, Bundesliga, Ligue 1)",
+      "Automated daily fixture and data synchronization using Vercel cron jobs"
     ],
     challenges: [
-      "Managing complex interactive state across technology cards and the active stack sidebar without prop drilling.",
-      "Creating seamless visual feedback with toast notifications while preventing UI freezing during rapid click events.",
-      "Designing an appealing modern gradient and dark-mode aesthetic consistent across viewports."
+      "Computing multi-market probability matrices using Poisson equations without degrading server response times.",
+      "Managing third-party football API rate limits while serving high-frequency live match updates.",
+      "Prompt engineering Google Gemini AI to generate factual tactical analysis strictly grounded in verified match statistics without hallucinations."
     ],
     solutions: [
-      "Structured clean React useState state flows for seamless tool array modifications and deduplication checks.",
-      "Integrated lightweight toast notification handlers with non-blocking timeouts.",
-      "Crafted flexible utility-first classes using Tailwind CSS and CSS transitions for fluid hover and selection effects."
+      "Implemented pure mathematical calculation algorithms on the backend with optimized statistical loops.",
+      "Built multi-layer database caching in MongoDB and in-memory deduplication with fallback seed data.",
+      "Structured strict JSON schemas and system prompts for Gemini AI, enforcing statistical grounding before generating prose."
     ],
     improvements: [
-      "Export assembled tech stack configurations directly as `package.json` starter templates.",
-      "Add architectural compatibility warnings when incompatible tools are selected together."
+      "Add live push notifications for in-game momentum shifts and unexpected lineup changes.",
+      "Expand mathematical models to incorporate expected threat (xT) and progressive pass tracking."
     ],
     futurePlans: [
-      "Incorporate GitHub repository template generators based on the assembled stack.",
-      "Add community upvotes and stack sharing via short URLs."
-    ]
-  },
-  {
-    id: "devconf-2026",
-    slug: "devconf-2026",
-    title: "DEVCONF 2026",
-    tagline: "Modern Developer Conference & Technology Summit Landing Platform",
-    shortDescription: "A high-conversion developer conference platform featuring keynote speaker profiles, multi-track schedules, venue information, and registration flows.",
-    detailedOverview: "DEVCONF 2026 (Assignment-01) is a specialized event landing page engineered to provide conference attendees with an engaging, information-rich digital itinerary. Featuring speaker lineups, event countdowns, multi-track agendas, and responsive call-to-actions, it demonstrates strong semantic HTML structure and CSS3 layouts.",
-    image: "/images/projects/devconf.svg",
-    imageAlt: "DEVCONF 2026 event landing page screenshot preview",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "CSS Grid", "GitHub Pages"],
-    status: "Completed",
-    featured: true,
-    liveUrl: "https://mabdullah404.github.io/Assignment-01/",
-    githubUrl: "https://github.com/mabdullah404/Assignment-01",
-    keyFeatures: [
-      "High-contrast hero section with event dates and registration triggers",
-      "Interactive speaker roster with social links and topic descriptions",
-      "Comprehensive session schedule organized by technical tracks",
-      "Responsive navigation bar with mobile-friendly drawer",
-      "Accessibility-tested typography using Google Fonts (Inter & Arimo)"
-    ],
-    challenges: [
-      "Structuring intricate multi-column conference schedules that adapt fluidly to small smartphone screens.",
-      "Achieving pixel-perfect alignment and typography hierarchy using pure CSS without relying on heavy frameworks.",
-      "Ensuring fast initial load time with optimized local and CDN assets."
-    ],
-    solutions: [
-      "Employed CSS Flexbox and responsive CSS Grid with custom media query breakpoints.",
-      "Defined centralized CSS custom variables for typography scales, brand blues, and spacing tokens.",
-      "Optimized vector iconography and minified styling rules for immediate first-paint rendering."
-    ],
-    improvements: [
-      "Add an interactive Google Maps embed with directions to the physical venue.",
-      "Integrate calendar sync buttons (Google Calendar, iCal, Outlook) for individual talks."
-    ],
-    futurePlans: [
-      "Implement real-time seat reservation with ticket tier selections.",
-      "Add live stream video player embed for remote attendees."
-    ]
-  },
-  {
-    id: "frameora",
-    slug: "frameora",
-    title: "Frameora",
-    tagline: "Curated Visual Storytelling & Photography Platform (In Development)",
-    shortDescription: "A visual portfolio and photography showcase platform currently under active development, emphasizing immersive dark aesthetics, high-res images, and seamless masonry layouts.",
-    detailedOverview: "Frameora is an ongoing creative web project engineered to celebrate visual art, photography collections, and digital media portfolios. Designed with an editorial aesthetic, Frameora offers a distraction-free environment where image details, aspect ratios, and visual narratives take center stage.",
-    image: "/images/projects/frameora.svg",
-    imageAlt: "Frameora photography showcase layout preview",
-    technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "CSS Grid", "Image Optimization"],
-    status: "In Development",
-    featured: true,
-    liveUrl: "", 
-    githubUrl: "https://github.com/mabdullah404",
-    keyFeatures: [
-      "Dynamic masonry and editorial grid layouts accommodating varying aspect ratios",
-      "Smooth modal lightbox with keyboard shortcuts for intuitive image viewing",
-      "Category tags for landscape, portrait, street, and architectural photography",
-      "Adaptive loading states and low-quality image placeholders (LQIP) to avoid layout shifts",
-      "Modern dark aesthetic that highlights image colors and contrast"
-    ],
-    challenges: [
-      "Handling heterogeneous image dimensions without breaking grid alignment or cropping focal points unintentionally.",
-      "Optimizing load performance for high-resolution photographs on slower network connections.",
-      "Maintaining smooth transitions when expanding images into full-screen view."
-    ],
-    solutions: [
-      "Designed responsive CSS Grid masonry patterns paired with aspect-ratio utilities.",
-      "Used Next.js Image component with modern WebP formatting, responsive srcset, and blurred placeholder states.",
-      "Kept UI elements lightweight and minimal to ensure that the browser engine prioritizes media decoding."
-    ],
-    improvements: [
-      "Add EXIF data display overlay (camera model, shutter speed, ISO, aperture) for photography enthusiasts.",
-      "Implement client-side collection bookmarking using browser LocalStorage."
-    ],
-    futurePlans: [
-      "Build a creator upload dashboard with cloud asset integration (e.g., Cloudinary or Supabase Storage).",
-      "Add social sharing cards with dynamic OpenGraph image generation for featured shots."
+      "Implement historical model backtesting dashboard comparing predicted probabilities with final results.",
+      "Introduce personalized user watchlists and automated fantasy football transfer recommendations."
     ]
   },
   {
@@ -199,6 +121,86 @@ export const projectsData: Project[] = [
     futurePlans: [
       "Implement a dedicated admin CMS dashboard for editors to publish and draft articles directly.",
       "Incorporate push notifications for breaking news alerts across mobile and desktop browsers."
+    ]
+  },
+  {
+    id: "bazar-dor",
+    slug: "bazar-dor",
+    title: "Bazar Dor",
+    tagline: "Daily Commodity & Market Price Tracking Web Application",
+    shortDescription: "A focused web application helping users track daily market commodity prices, monitor grocery fluctuations, and plan household purchasing efficiently.",
+    detailedOverview: "Bazar Dor is a practical web application designed to address everyday shopping needs in Bangladesh. It provides a clean, user-friendly interface for browsing daily bazaar prices, comparing essential commodity rates, and categorizing market goods so users can make informed purchasing decisions without manual calculation.",
+    image: "/images/projects/bazar-dor.svg",
+    imageAlt: "Bazar Dor application screenshot and dashboard interface preview",
+    technologies: ["React", "Next.js", "JavaScript", "Tailwind CSS", "Responsive Design", "Vercel"],
+    status: "Completed",
+    featured: true,
+    liveUrl: "https://bazar-dor-project-omega.vercel.app/",
+    githubUrl: "https://github.com/mabdullah404/bazar-dor-project",
+    keyFeatures: [
+      "Dynamic categorization of daily commodities (vegetables, fish, groceries, spices)",
+      "Price tracking table and card views with high readability",
+      "Fast responsive search and category filtering for quick lookups",
+      "Mobile-optimized layout for on-the-go price checks in the market",
+      "Clean UI visual tokens tailored for effortless scanning"
+    ],
+    challenges: [
+      "Structuring price data so it can be updated easily and displayed with zero layout shift on mobile screens.",
+      "Ensuring that fast search and filtering remain smooth without unnecessary re-renders.",
+      "Designing an intuitive mobile-first experience accessible for users with varying digital familiarity."
+    ],
+    solutions: [
+      "Implemented modular React component architecture separating the search filter controls from the presentation cards.",
+      "Leveraged responsive CSS Grid and Flexbox with Tailwind CSS to ensure fluid table and card transformation across screen sizes.",
+      "Optimized state updates with clean client-side hooks to keep searching instantaneous."
+    ],
+    improvements: [
+      "Integrate local price fluctuation charts showing 7-day and 30-day historical trends.",
+      "Add user shopping-list calculation where items can be checked off with total budget computation."
+    ],
+    futurePlans: [
+      "Connect with automated or crowdsourced daily market price APIs.",
+      "Support bilingual locale toggle (Bengali and English) for broader community accessibility."
+    ]
+  },
+  {
+    id: "frameora",
+    slug: "frameora",
+    title: "Frameora",
+    tagline: "Curated Visual Storytelling & Photography Platform (In Development)",
+    shortDescription: "A visual portfolio and photography showcase platform currently under active development, emphasizing immersive dark aesthetics, high-res images, and seamless masonry layouts.",
+    detailedOverview: "Frameora is an ongoing creative web project engineered to celebrate visual art, photography collections, and digital media portfolios. Designed with an editorial aesthetic, Frameora offers a distraction-free environment where image details, aspect ratios, and visual narratives take center stage.",
+    image: "/images/projects/frameora.svg",
+    imageAlt: "Frameora photography showcase layout preview",
+    technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "CSS Grid", "Image Optimization"],
+    status: "In Development",
+    featured: true,
+    liveUrl: "", 
+    githubUrl: "https://github.com/mabdullah404",
+    keyFeatures: [
+      "Dynamic masonry and editorial grid layouts accommodating varying aspect ratios",
+      "Smooth modal lightbox with keyboard shortcuts for intuitive image viewing",
+      "Category tags for landscape, portrait, street, and architectural photography",
+      "Adaptive loading states and low-quality image placeholders (LQIP) to avoid layout shifts",
+      "Modern dark aesthetic that highlights image colors and contrast"
+    ],
+    challenges: [
+      "Handling heterogeneous image dimensions without breaking grid alignment or cropping focal points unintentionally.",
+      "Optimizing load performance for high-resolution photographs on slower network connections.",
+      "Maintaining smooth transitions when expanding images into full-screen view."
+    ],
+    solutions: [
+      "Designed responsive CSS Grid masonry patterns paired with aspect-ratio utilities.",
+      "Used Next.js Image component with modern WebP formatting, responsive srcset, and blurred placeholder states.",
+      "Kept UI elements lightweight and minimal to ensure that the browser engine prioritizes media decoding."
+    ],
+    improvements: [
+      "Add EXIF data display overlay (camera model, shutter speed, ISO, aperture) for photography enthusiasts.",
+      "Implement client-side collection bookmarking using browser LocalStorage."
+    ],
+    futurePlans: [
+      "Build a creator upload dashboard with cloud asset integration (e.g., Cloudinary or Supabase Storage).",
+      "Add social sharing cards with dynamic OpenGraph image generation for featured shots."
     ]
   }
 ];

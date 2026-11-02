@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { GithubIcon, LinkedinIcon, ArrowUpIcon } from '@/components/ui/Icons';
+import { GithubIcon, LinkedinIcon, TwitterIcon, FacebookIcon, ArrowUpIcon } from '@/components/ui/Icons';
 import { profileData } from '@/data/profile';
 
 export function Footer() {
@@ -39,7 +39,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm text-slate-500 dark:text-zinc-400 max-w-sm leading-relaxed">
-              {profileData.designation}. Computer Science &amp; Engineering student at BUBT building practical web software.
+              {profileData.designation}. Computer Science &amp; Engineering student at BUBT passionate about building modern web software.
             </p>
             <div className="pt-2 flex items-center gap-3">
               <a
@@ -68,7 +68,18 @@ export function Footer() {
                   className="p-2 rounded-lg bg-white border border-slate-200 text-slate-600 hover:text-red-600 hover:border-slate-300 transition-colors dark:bg-zinc-900 dark:border-zinc-800 dark:text-zinc-400 dark:hover:text-red-400 dark:hover:border-zinc-700"
                   aria-label="Twitter Profile"
                 >
-                  <span className="font-bold text-xs flex h-4.5 w-4.5 items-center justify-center">𝕏</span>
+                  <TwitterIcon size={18} />
+                </a>
+              )}
+              {profileData.socials.facebook && (
+                <a
+                  href={profileData.socials.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-lg bg-white border border-slate-200 text-slate-600 hover:text-red-600 hover:border-slate-300 transition-colors dark:bg-zinc-900 dark:border-zinc-800 dark:text-zinc-400 dark:hover:text-red-400 dark:hover:border-zinc-700"
+                  aria-label="Facebook Profile"
+                >
+                  <FacebookIcon size={18} />
                 </a>
               )}
             </div>
@@ -90,12 +101,17 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/#skills" className="hover:text-red-600 dark:hover:text-red-400 transition-colors">
-                  Technical Stack
+                  Skills &amp; Technologies
                 </Link>
               </li>
               <li>
                 <Link href="/#education" className="hover:text-red-600 dark:hover:text-red-400 transition-colors">
-                  Verified Education
+                  Educational Background
+                </Link>
+              </li>
+              <li>
+                <Link href="/#experience" className="hover:text-red-600 dark:hover:text-red-400 transition-colors">
+                  Experience Track
                 </Link>
               </li>
               <li>
@@ -113,8 +129,8 @@ export function Footer() {
 
           {/* Direct Channels */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-zinc-200">Contact Channels</h4>
-            <ul className="space-y-2 text-sm font-mono text-xs">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-zinc-200">Direct Contact</h4>
+            <ul className="space-y-2 text-xs font-mono">
               <li>
                 <a
                   href={`mailto:${profileData.socials.email}`}
@@ -132,7 +148,17 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <span className="text-slate-400 dark:text-zinc-500 block">
+                <a
+                  href={`https://wa.me/8801717697404`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors block"
+                >
+                  WhatsApp: {profileData.socials.whatsapp}
+                </a>
+              </li>
+              <li>
+                <span className="text-slate-400 dark:text-zinc-500 block pt-1">
                   Location: {profileData.location}
                 </span>
               </li>
@@ -143,7 +169,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-slate-200 dark:border-zinc-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500 dark:text-zinc-500">
           <div>
-            &copy; {currentYear} {profileData.fullName || profileData.name}. All verified rights reserved.
+            &copy; {currentYear} {profileData.fullName || profileData.name}. All rights reserved.
           </div>
           <button
             onClick={scrollToTop}

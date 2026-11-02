@@ -1,0 +1,99 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 3137 >>
+stream
+BT
+/F1 20 Tf
+50 760 Td (ABDULLAH AL MAMUN) Tj
+/F2 11 Tf
+0 -18 Td (Full Stack & Frontend Developer | Computer Science & Engineering Undergraduate) Tj
+/F2 9 Tf
+0 -15 Td (Dhaka, Bangladesh | Phone: +880 1717-697404 | Email: mabdullah539629@gmail.com) Tj
+0 -13 Td (GitHub: github.com/mabdullah404 | LinkedIn: linkedin.com/in/mabdullah77) Tj
+ET
+0.8 0.2 0.2 RG 2 w 50 705 m 550 705 l S
+0 0 0 rg
+BT
+/F1 12 Tf
+50 685 Td (PROFESSIONAL SUMMARY) Tj
+/F2 9.5 Tf
+0 -15 Td (Computer Science & Engineering student at BUBT passionate about building modern, responsive,) Tj
+0 -13 Td (user-centric web applications. Proficient in React, Next.js App Router, TypeScript, Tailwind CSS,) Tj
+0 -13 Td (Node.js, Express, MongoDB Atlas, and AI integrations with Google Gemini.) Tj
+/F1 12 Tf
+0 -24 Td (TECHNICAL SKILLS) Tj
+/F2 9.5 Tf
+0 -15 Td (Frontend: React 19, Next.js (App Router), JavaScript (ES6+), TypeScript, Tailwind CSS, DaisyUI, HTML5, CSS3) Tj
+0 -13 Td (Backend & DB: Node.js, Express.js, MongoDB Atlas, Mongoose, RESTful APIs, BetterAuth, JWT) Tj
+0 -13 Td (Tools & Cloud: Git, GitHub, Vercel, Netlify, VS Code, Postman, Turbopack, REST Testing) Tj
+/F1 12 Tf
+0 -24 Td (EDUCATION) Tj
+/F1 10 Tf
+0 -16 Td (B.Sc. in Computer Science and Engineering (CSE)) Tj
+/F2 9.5 Tf
+0 -13 Td (Bangladesh University of Business and Technology (BUBT), Dhaka | Currently Enrolled) Tj
+/F1 10 Tf
+0 -16 Td (Diploma in Computer Science and Engineering) Tj
+/F2 9.5 Tf
+0 -13 Td (Tangail Polytechnic Institute, Tangail | Completed) Tj
+/F1 12 Tf
+0 -24 Td (FEATURED PROJECTS) Tj
+/F1 10 Tf
+0 -16 Td (CivicPulse - Grassroots Social Development & Community Events Platform) Tj
+/F2 9 Tf
+0 -13 Td (Next.js 16, React, Tailwind CSS, DaisyUI, BetterAuth, Node.js, Express, MongoDB Atlas) Tj
+0 -12 Td (- Community event discovery with future-date validation, volunteer registration, and organizer console.) Tj
+0 -12 Td (- Live Site: https://social-development-platform.vercel.app) Tj
+/F1 10 Tf
+0 -16 Td (MatchIQ - AI Football Analytics & Prediction Platform) Tj
+/F2 9 Tf
+0 -13 Td (Next.js, React, Tailwind CSS, Google Gemini AI, MongoDB, API-Football V3, Dixon-Coles Engine) Tj
+0 -12 Td (- Full-stack match intelligence with pure mathematical Poisson models, Gemini AI analysis, and pitch lineups.) Tj
+0 -12 Td (- Live Site: https://football-prediction-platform-neon.vercel.app) Tj
+/F1 10 Tf
+0 -16 Td (News Bangla 24 - Full-Stack Bengali News Publication Portal) Tj
+/F2 9 Tf
+0 -13 Td (Next.js App Router, React, Tailwind CSS, Dynamic Routing, Authentication) Tj
+0 -12 Td (- Multi-category news distribution with real-time breaking news marquee and responsive reading layout.) Tj
+0 -12 Td (- Live Site: https://news-bangla-24-o8cr.vercel.app) Tj
+/F1 10 Tf
+0 -16 Td (Bazar Dor - Daily Commodity & Market Price Tracking Web Application) Tj
+/F2 9 Tf
+0 -13 Td (React, Next.js, JavaScript, Tailwind CSS, Responsive Design) Tj
+0 -12 Td (- Fast responsive commodity lookups, grocery fluctuations, and mobile-optimized price checks.) Tj
+/F1 12 Tf
+0 -24 Td (ACTIVITIES & INTERESTS) Tj
+/F2 9.5 Tf
+0 -15 Td (Cricket & Football, Traveling & Exploring, Photography, and Competitive Esports Gaming.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000003440 00000 n 
+0000003515 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+3585
+%%EOF

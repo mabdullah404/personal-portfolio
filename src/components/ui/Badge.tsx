@@ -2,7 +2,7 @@ import React from 'react';
 
 interface BadgeProps {
   children: React.ReactNode;
-  variant?: 'lime' | 'slate' | 'amber' | 'blue' | 'outline' | 'red';
+  variant?: 'lime' | 'slate' | 'amber' | 'blue' | 'outline' | 'red' | 'emerald';
   size?: 'sm' | 'md';
   className?: string;
 }
@@ -21,6 +21,7 @@ export function Badge({
     slate: 'bg-slate-100 text-slate-700 border border-slate-200 dark:bg-zinc-800/80 dark:text-zinc-300 dark:border-zinc-700/60',
     amber: 'bg-amber-50 text-amber-700 border border-amber-200 dark:bg-amber-950/50 dark:text-amber-400 dark:border-amber-800/40',
     blue: 'bg-sky-50 text-sky-700 border border-sky-200 dark:bg-sky-950/50 dark:text-sky-400 dark:border-sky-800/40',
+    emerald: 'bg-emerald-50 text-emerald-700 border border-emerald-200 dark:bg-emerald-950/50 dark:text-emerald-400 dark:border-emerald-800/40',
     outline: 'bg-transparent text-slate-600 border border-slate-300 dark:text-zinc-400 dark:border-zinc-700'
   }[variant];
 

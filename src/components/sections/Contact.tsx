@@ -7,6 +7,8 @@ import {
   PhoneIcon, 
   GithubIcon, 
   LinkedinIcon, 
+  TwitterIcon,
+  FacebookIcon,
   WhatsappIcon,
   CheckCircleIcon,
   ExternalLinkIcon
@@ -172,10 +174,23 @@ export function Contact() {
                     href={socials.twitter}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center gap-2.5 p-3 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-300 hover:bg-slate-100 hover:text-red-600 transition-all text-slate-700 text-xs font-medium sm:col-span-2 dark:bg-zinc-950 dark:border-zinc-800/80 dark:text-zinc-300 dark:hover:bg-zinc-900 dark:hover:border-zinc-700 dark:hover:text-red-400"
+                    className="group flex items-center gap-2.5 p-3 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-300 hover:bg-slate-100 hover:text-red-600 transition-all text-slate-700 text-xs font-medium dark:bg-zinc-950 dark:border-zinc-800/80 dark:text-zinc-300 dark:hover:bg-zinc-900 dark:hover:border-zinc-700 dark:hover:text-red-400"
                   >
-                    <span className="flex h-4 w-4 items-center justify-center font-bold text-red-600 dark:text-red-400 text-xs shrink-0">𝕏</span>
-                    <span>Twitter / X (@mabdullah77d)</span>
+                    <TwitterIcon size={16} className="text-red-600 dark:text-red-400 shrink-0" />
+                    <span>Twitter / X</span>
+                    <ExternalLinkIcon size={12} className="ml-auto text-slate-400 dark:text-zinc-500 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors" />
+                  </a>
+                )}
+
+                {socials.facebook && (
+                  <a
+                    href={socials.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-2.5 p-3 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-300 hover:bg-slate-100 hover:text-red-600 transition-all text-slate-700 text-xs font-medium dark:bg-zinc-950 dark:border-zinc-800/80 dark:text-zinc-300 dark:hover:bg-zinc-900 dark:hover:border-zinc-700 dark:hover:text-red-400"
+                  >
+                    <FacebookIcon size={16} className="text-red-600 dark:text-red-400 shrink-0" />
+                    <span>Facebook</span>
                     <ExternalLinkIcon size={12} className="ml-auto text-slate-400 dark:text-zinc-500 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors" />
                   </a>
                 )}

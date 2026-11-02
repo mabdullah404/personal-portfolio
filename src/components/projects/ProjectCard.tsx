@@ -68,12 +68,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
       {/* Action Footer */}
       <div className="pt-4 border-t border-slate-100 dark:border-zinc-800/70 flex items-center justify-between gap-3">
-        {/* Primary View Details Button */}
+        {/* Primary View More / Details Button */}
         <Link
           href={`/projects/${project.slug}`}
           className="inline-flex items-center gap-2 rounded-xl bg-red-600 hover:bg-red-700 px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 shadow-sm"
         >
-          <span>View Details</span>
+          <span>View More / Details</span>
           <ArrowRightIcon size={14} />
         </Link>
 

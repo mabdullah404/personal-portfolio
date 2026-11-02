@@ -22,16 +22,16 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://abdullah-portfolio.vercel.app'),
-  title: `${profileData.name} — Web Developer & CSE Student`,
+  metadataBase: new URL('https://personal-portfolio-green-one-68.vercel.app'),
+  title: `${profileData.name} — ${profileData.designation}`,
   description: `${profileData.heroBio} Currently studying Computer Science and Engineering at BUBT.`,
   keywords: [
-    'Abdullah',
-    'Web Developer',
+    'Abdullah Al Mamun',
+    'Full Stack Developer',
     'Frontend Developer',
     'Next.js Developer',
+    'React Developer',
     'TypeScript',
-    'React',
     'Tailwind CSS',
     'BUBT',
     'Computer Science and Engineering',
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://abdullah-portfolio.vercel.app',
-    title: `${profileData.name} — Web Developer`,
+    url: 'https://personal-portfolio-green-one-68.vercel.app',
+    title: `${profileData.name} — ${profileData.designation}`,
     description: profileData.heroBio,
     siteName: `${profileData.name} Portfolio`,
     images: [

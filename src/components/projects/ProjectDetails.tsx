@@ -70,10 +70,10 @@ export function ProjectDetails({ project }: ProjectDetailsProps) {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-xl bg-white border border-slate-200 px-5 py-2.5 text-xs font-semibold text-slate-700 hover:text-red-600 hover:border-slate-300 transition-all dark:bg-zinc-900 dark:border-zinc-800 dark:text-zinc-200 dark:hover:text-red-400 dark:hover:border-zinc-700"
+              className="inline-flex items-center gap-2 rounded-xl bg-white border border-slate-200 px-5 py-2.5 text-xs font-semibold text-slate-700 hover:text-red-600 hover:border-slate-300 transition-all dark:bg-zinc-900 dark:border-zinc-800 dark:text-zinc-200 dark:hover:text-red-400 dark:hover:border-zinc-700 shadow-xs"
             >
               <GithubIcon size={16} />
-              <span>Source Repository</span>
+              <span>GitHub Repository (Client)</span>
               <ExternalLinkIcon size={12} className="text-slate-400 dark:text-zinc-500" />
             </a>
           ) : (

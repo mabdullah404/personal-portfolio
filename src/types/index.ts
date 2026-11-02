@@ -2,6 +2,7 @@ export interface SocialLinks {
   github: string;
   linkedin: string;
   twitter?: string;
+  facebook?: string;
   email: string;
   phone: string;
   whatsapp: string;

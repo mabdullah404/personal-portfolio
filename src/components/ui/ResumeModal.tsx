@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import { CloseIcon, InfoIcon, GraduationCapIcon } from './Icons';
+import { CloseIcon, InfoIcon, DownloadIcon } from './Icons';
 
 interface ResumeModalProps {
   isOpen: boolean;
@@ -30,7 +30,7 @@ export function ResumeModal({ isOpen, onClose, resumeFileName }: ResumeModalProp
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
       {/* Backdrop */}
       <div 
-        className="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity" 
+        className="fixed inset-0 bg-black/60 backdrop-blur-xs transition-opacity" 
         onClick={onClose}
         aria-hidden="true"
       />
@@ -44,9 +44,9 @@ export function ResumeModal({ isOpen, onClose, resumeFileName }: ResumeModalProp
             </div>
             <div>
               <h3 id="resume-modal-title" className="text-lg font-bold text-slate-900 dark:text-zinc-100">
-                Resume PDF Setup Notice
+                Abdullah Al Mamun — Resume
               </h3>
-              <p className="text-xs text-slate-500 dark:text-zinc-400">File location: public/resume/{resumeFileName}</p>
+              <p className="text-xs text-slate-500 dark:text-zinc-400">Full Stack &amp; Frontend Developer</p>
             </div>
           </div>
           <button
@@ -60,22 +60,17 @@ export function ResumeModal({ isOpen, onClose, resumeFileName }: ResumeModalProp
 
         <div className="mt-5 space-y-4 text-sm text-slate-600 dark:text-zinc-300">
           <p className="leading-relaxed">
-            Per your portfolio requirements, a download is only triggered when your actual PDF document exists.
-            The file <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-red-600 font-mono dark:bg-zinc-900 dark:text-red-400">public/resume/{resumeFileName}</code> has not been placed in this repository yet.
+            Click below to download a copy of my curriculum vitae ({resumeFileName}) detailing my engineering degrees, skills, and portfolio projects.
           </p>
 
           <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 space-y-2 text-xs dark:border-zinc-800/80 dark:bg-zinc-900/60">
-            <p className="font-semibold text-slate-900 dark:text-zinc-200">How to activate automatic resume download:</p>
-            <ol className="list-decimal pl-4 space-y-1 text-slate-600 dark:text-zinc-400">
-              <li>Save your resume as a PDF named <span className="text-slate-900 font-mono font-medium dark:text-zinc-200">{resumeFileName}</span>.</li>
-              <li>Drop it into the <span className="text-slate-900 font-mono font-medium dark:text-zinc-200">public/resume/</span> folder.</li>
-              <li>Once added, clicking the Resume button will instantly download your PDF document.</li>
-            </ol>
+            <p className="font-semibold text-slate-900 dark:text-zinc-200">Summary Highlights:</p>
+            <ul className="list-disc pl-4 space-y-1 text-slate-600 dark:text-zinc-400">
+              <li>B.Sc. in Computer Science &amp; Engineering — BUBT</li>
+              <li>Diploma in Computer Science &amp; Engineering — Tangail Polytechnic Institute</li>
+              <li>Core: Next.js, React, TypeScript, Tailwind CSS, Node.js, Express, MongoDB</li>
+            </ul>
           </div>
-
-          <p className="text-xs text-slate-500 dark:text-zinc-400">
-            In the meantime, all your verified education details, skills, and projects are available on this page.
-          </p>
         </div>
 
         <div className="mt-6 flex flex-col-reverse sm:flex-row sm:items-center sm:justify-end gap-3">
@@ -86,12 +81,13 @@ export function ResumeModal({ isOpen, onClose, resumeFileName }: ResumeModalProp
             Close
           </button>
           <a
-            href="#education"
+            href="/resume/Abdullah-Resume.pdf"
+            download="Abdullah-Resume.pdf"
             onClick={onClose}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white hover:bg-red-700 transition-colors shadow-xs"
           >
-            <GraduationCapIcon size={16} />
-            <span>View Verified Education</span>
+            <DownloadIcon size={16} />
+            <span>Download Resume PDF</span>
           </a>
         </div>
       </div>

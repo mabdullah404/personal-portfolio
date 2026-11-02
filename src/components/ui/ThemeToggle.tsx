@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useSyncExternalStore } from 'react';
 
 function SunIcon() {
   return (
@@ -26,58 +26,84 @@ function MoonIcon() {
   );
 }
 
-export function ThemeToggle() {
-  const [isDark, setIsDark] = useState(true);
-  const [mounted, setMounted] = useState(false);
+const themeListeners = new Set<() => void>();
 
-  useEffect(() => {
-    setMounted(true);
-    const stored = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initialDark = stored ? stored === 'dark' : prefersDark;
-    setIsDark(initialDark);
-    applyTheme(initialDark);
-  }, []);
+function notifyThemeListeners() {
+  themeListeners.forEach((listener) => listener());
+}
 
-  function applyTheme(dark: boolean) {
-    const html = document.documentElement;
-    if (dark) {
-      html.setAttribute('data-theme', 'dark');
-      html.classList.remove('light');
-      html.classList.add('dark');
-    } else {
-      html.setAttribute('data-theme', 'light');
-      html.classList.remove('dark');
-      html.classList.add('light');
-    }
+function subscribe(callback: () => void) {
+  themeListeners.add(callback);
+  window.addEventListener('storage', callback);
+  const media = window.matchMedia('(prefers-color-scheme: dark)');
+  media.addEventListener('change', callback);
+
+  return () => {
+    themeListeners.delete(callback);
+    window.removeEventListener('storage', callback);
+    media.removeEventListener('change', callback);
+  };
+}
+
+function getSnapshot(): boolean {
+  if (typeof window === 'undefined') return true;
+  const stored = localStorage.getItem('theme');
+  if (stored) return stored === 'dark';
+  return window.matchMedia('(prefers-color-scheme: dark)').matches;
+}
+
+function getServerSnapshot(): boolean {
+  return true;
+}
+
+function applyTheme(dark: boolean) {
+  if (typeof document === 'undefined') return;
+  const html = document.documentElement;
+  if (dark) {
+    html.setAttribute('data-theme', 'dark');
+    html.classList.remove('light');
+    html.classList.add('dark');
+  } else {
+    html.setAttribute('data-theme', 'light');
+    html.classList.remove('dark');
+    html.classList.add('light');
   }
+}
+
+export function ThemeToggle() {
+  const isDark = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+  const isMounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  );
 
   function toggle() {
     const next = !isDark;
-    setIsDark(next);
     localStorage.setItem('theme', next ? 'dark' : 'light');
     applyTheme(next);
+    notifyThemeListeners();
   }
 
-  if (!mounted) {
-    return <div className="w-[52px] h-[28px] rounded-full bg-zinc-800 border border-zinc-700" aria-hidden="true" />;
+  if (!isMounted) {
+    return (
+      <div
+        className="w-9 h-9 rounded-xl border border-slate-200 bg-slate-100 dark:border-zinc-800 dark:bg-zinc-900 animate-pulse"
+        aria-hidden="true"
+      />
+    );
   }
 
   return (
     <button
-      id="theme-toggle"
+      type="button"
       onClick={toggle}
-      aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-      title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-      className={`relative flex items-center w-[52px] h-[28px] rounded-full border transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-red-500 ${isDark ? 'bg-zinc-800 border-zinc-700 hover:border-zinc-600' : 'bg-amber-50 border-amber-200 hover:border-amber-300'}`}
+      className="relative p-2 rounded-xl text-slate-600 hover:text-red-600 hover:bg-slate-100 border border-slate-200 shadow-xs dark:text-zinc-300 dark:hover:text-red-400 dark:hover:bg-zinc-900 dark:border-zinc-800 transition-all focus:outline-none focus:ring-2 focus:ring-red-500"
+      aria-label={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
+      title={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
     >
-      <span className={`absolute left-[5px] text-amber-400 transition-all duration-300 ${isDark ? 'opacity-40 scale-75' : 'opacity-100 scale-100'}`}>
-        <SunIcon />
-      </span>
-      <span className={`absolute right-[5px] text-slate-400 transition-all duration-300 ${isDark ? 'opacity-100 scale-100' : 'opacity-40 scale-75'}`}>
-        <MoonIcon />
-      </span>
-      <span className={`absolute top-[3px] w-[22px] h-[22px] rounded-full shadow-md transition-all duration-300 ease-in-out ${isDark ? 'translate-x-[25px] bg-zinc-200' : 'translate-x-[3px] bg-amber-400'}`} />
+      <span className="sr-only">Toggle theme</span>
+      {isDark ? <SunIcon /> : <MoonIcon />}
     </button>
   );
 }

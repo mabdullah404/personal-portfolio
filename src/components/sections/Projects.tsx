@@ -24,7 +24,7 @@ export function Projects() {
 
           <div className="shrink-0 font-mono text-xs text-slate-600 bg-white border border-slate-200 rounded-xl px-3.5 py-2 shadow-xs dark:bg-zinc-900 dark:border-zinc-800 dark:text-zinc-400">
             <span>SHOWING: </span>
-            <span className="text-red-600 dark:text-red-400 font-bold">{projectsData.length} VERIFIED ENTRIES</span>
+            <span className="text-red-600 dark:text-red-400 font-bold">{projectsData.length} FEATURED PROJECTS</span>
           </div>
         </div>
 

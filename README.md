@@ -80,11 +80,11 @@ Engineered with cutting-edge web technologies, the application delivers lightnin
 
 | Project | Live Demo | Source Code | Highlights |
 | :--- | :---: | :---: | :--- |
-| **Bazar Dor** | [🔗 Live Demo](https://bazar-dor-project-omega.vercel.app/) | [💻 GitHub](https://github.com/mabdullah404/bazar-dor-project) | Daily grocery & commodity market price tracking app in Bangladesh. |
-| **DevStack** | [🔗 Live Demo](https://development-stack-assignment-05.netlify.app/) | [💻 GitHub](https://github.com/mabdullah404/Assignment-05) | Interactive developer stack builder, tool comparison, and real-time toast feedback. |
-| **DEVCONF 2026** | [🔗 Live Demo](https://mabdullah404.github.io/Assignment-01/) | [💻 GitHub](https://github.com/mabdullah404/Assignment-01) | Developer conference event landing page with speaker schedules and agendas. |
-| **Frameora** | *In Development* | [💻 GitHub](https://github.com/mabdullah404) | Curated visual storytelling, photography showcase, and masonry galleries. |
+| **CivicPulse** | [🔗 Live Demo](https://social-development-platform.vercel.app/) | [💻 GitHub](https://github.com/mabdullah404/social_devlopment_platform) | Grassroots social development & verified neighborhood volunteer events network. |
+| **MatchIQ** | [🔗 Live Demo](https://football-prediction-platform-neon.vercel.app/) | [💻 GitHub](https://github.com/mabdullah404/football_prediction-platform) | AI-powered football intelligence, Poisson prediction models & Gemini tactical reports. |
 | **News Bangla 24** | [🔗 Live Demo](https://news-bangla-24-o8cr.vercel.app/) | [💻 GitHub](https://github.com/mabdullah404/news-bangla-24) | Full-stack Bengali news portal with real-time ticker marquee and multi-category feeds. |
+| **Bazar Dor** | [🔗 Live Demo](https://bazar-dor-project-omega.vercel.app/) | [💻 GitHub](https://github.com/mabdullah404/bazar-dor-project) | Daily grocery & commodity market price tracking app in Bangladesh. |
+| **Frameora** | *In Development* | [💻 GitHub](https://github.com/mabdullah404) | Curated visual storytelling, photography showcase, and masonry galleries. |
 
 ---
 
