@@ -61,7 +61,7 @@ export function About() {
               <div className="flex items-center gap-2.5">
                 <span className="flex h-2.5 w-2.5 rounded-full bg-sky-500" />
                 <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100">
-                  Continuous Learning &amp; AI Integration
+                  Continuous Learning &amp; Full-Stack Growth
                 </h3>
               </div>
               <p className="text-sm text-slate-600 dark:text-zinc-300 leading-relaxed">

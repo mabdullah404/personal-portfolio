@@ -26,7 +26,7 @@ export const profileData: ProfileData = {
   aboutStory: {
     journey: "My programming journey began with a natural curiosity about how web applications transform everyday life. After completing my Diploma in Computer Science & Engineering from Tangail Polytechnic Institute with a solid foundation in core programming and web technologies, I enrolled at Bangladesh University of Business and Technology (BUBT) for my B.Sc. in CSE. Through active coding and building real-world projects, I turned that initial curiosity into a focused craft for shipping responsive, scalable web solutions.",
     focus: "I genuinely enjoy crafting clean, intuitive user interfaces and practical web applications. Whether it's architecting fluid responsive layouts with Tailwind CSS, ensuring static type safety with TypeScript, or engineering modular React components, I focus on delivering seamless user experiences with zero compromise on accessibility or performance.",
-    learning: "Currently, I am expanding my full-stack capabilities with Next.js App Router, React 19, Node.js, Express, MongoDB Atlas, and AI integrations using Google Gemini. I believe the fastest way to grow as a developer is by solving tangible problems through hands-on development and shipping projects from scratch.",
+    learning: "Currently, I am expanding my full-stack capabilities with Next.js App Router, React 19, Node.js, Express, MongoDB Atlas, and mathematical data modeling. I believe the fastest way to grow as a developer is by solving tangible problems through hands-on development and shipping projects from scratch.",
     philosophy: "Beyond the code editor, I stay energized by playing cricket and football, traveling to explore new places, capturing visual moments through photography, and competitive gaming. This active lifestyle keeps my thinking clear, strengthens my collaborative mindset, and inspires fresh creativity in my development work."
   }
 };
@@ -58,7 +58,7 @@ export const skillsCategories: SkillCategory[] = [
       { name: "Express.js", levelBadge: "REST APIs", description: "Building RESTful endpoints, middleware chains, CORS, and request routing.", category: "learning", isStudied: true },
       { name: "MongoDB & Mongoose", levelBadge: "NoSQL Database", description: "Schema modeling, CRUD operations, indexing, and MongoDB Atlas cloud clusters.", category: "learning", isStudied: true },
       { name: "Authentication (BetterAuth / JWT)", levelBadge: "Security", description: "JSON Web Tokens, session handling, protected routes, and OAuth flows.", category: "learning", isStudied: true },
-      { name: "AI Integration (Gemini AI)", levelBadge: "AI & ML", description: "Connecting Google Gemini API for automated analysis and intelligent insights.", category: "learning", isStudied: true }
+      { name: "REST APIs & Data Services", levelBadge: "Integration", description: "Consuming external RESTful services, caching responses, and handling asynchronous streams.", category: "learning", isStudied: true }
     ]
   },
   {

@@ -45,20 +45,20 @@ export const projectsData: Project[] = [
   {
     id: "matchiq",
     slug: "matchiq",
-    title: "MatchIQ — Football Analytics & AI Prediction Platform",
-    tagline: "Full-Stack AI Football Intelligence & Poisson Prediction Engine",
-    shortDescription: "A comprehensive football analytics platform combining pure mathematical Dixon-Coles Poisson models, Google Gemini AI tactical reports, and live player intelligence.",
-    detailedOverview: "MatchIQ is a modern full-stack sports intelligence platform designed for deep match analysis and probabilistic match outcome forecasting. Built with Next.js App Router, Tailwind CSS, API-Football V3, MongoDB, and Google Gemini AI, it calculates multi-market probabilities (1X2, Over/Under, BTTS), simulates scorelines with Poisson distribution, and generates natural-language tactical reports.",
+    title: "MatchIQ — Football Analytics & Prediction Platform",
+    tagline: "Full-Stack Football Match Intelligence & Poisson Prediction Engine",
+    shortDescription: "A comprehensive football analytics platform combining pure mathematical Dixon-Coles Poisson models, tactical reports, live player intelligence, and interactive pitch formations.",
+    detailedOverview: "MatchIQ is a modern full-stack sports intelligence platform engineered for deep match analysis and probabilistic outcome forecasting. Built with Next.js App Router, Tailwind CSS, API-Football V3, and MongoDB, it calculates multi-market probabilities (1X2, Over/Under, BTTS), estimates expected goals (xG), simulates scorelines with Poisson distribution, and presents visual tactical lineup pitches.",
     image: "/images/projects/matchiq.svg",
-    imageAlt: "MatchIQ AI football analytics and match prediction platform preview",
-    technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS", "Google Gemini AI", "MongoDB", "Mongoose", "API-Football V3", "Vercel"],
+    imageAlt: "MatchIQ football analytics and Poisson prediction platform preview",
+    technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS", "MongoDB", "Mongoose", "API-Football V3", "Poisson Model", "Vercel"],
     status: "Completed",
     featured: true,
     liveUrl: "https://football-prediction-platform-neon.vercel.app",
     githubUrl: "https://github.com/mabdullah404/football_prediction-platform",
     keyFeatures: [
       "Dixon-Coles Poisson distribution mathematical prediction engine for 1X2 win probabilities, Over/Under, and BTTS",
-      "Google Gemini AI tactical analyst providing in-depth reports on attack vs. defense potency and key matchups",
+      "Tactical match intelligence engine providing in-depth reports on attack vs. defense potency and key matchups",
       "Interactive tactical football pitch displaying official confirmed starting XI and formations (4-3-3, 4-2-3-1)",
       "Player Intelligence system with opponent H2H comparisons, season ratings, and form trends",
       "Coverage across top European leagues (Premier League, La Liga, Champions League, Serie A, Bundesliga, Ligue 1)",
@@ -66,13 +66,13 @@ export const projectsData: Project[] = [
     ],
     challenges: [
       "Computing multi-market probability matrices using Poisson equations without degrading server response times.",
-      "Managing third-party football API rate limits while serving high-frequency live match updates.",
-      "Prompt engineering Google Gemini AI to generate factual tactical analysis strictly grounded in verified match statistics without hallucinations."
+      "Managing third-party sports API rate limits while serving high-frequency live match updates.",
+      "Designing responsive tactical pitch lineups that scale smoothly across mobile and desktop screens."
     ],
     solutions: [
       "Implemented pure mathematical calculation algorithms on the backend with optimized statistical loops.",
       "Built multi-layer database caching in MongoDB and in-memory deduplication with fallback seed data.",
-      "Structured strict JSON schemas and system prompts for Gemini AI, enforcing statistical grounding before generating prose."
+      "Engineered responsive SVG pitch nodes and CSS Grid views ensuring 100% responsiveness on any viewport."
     ],
     improvements: [
       "Add live push notifications for in-game momentum shifts and unexpected lineup changes.",

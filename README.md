@@ -81,7 +81,7 @@ Engineered with cutting-edge web technologies, the application delivers lightnin
 | Project | Live Demo | Source Code | Highlights |
 | :--- | :---: | :---: | :--- |
 | **CivicPulse** | [🔗 Live Demo](https://social-development-platform.vercel.app/) | [💻 GitHub](https://github.com/mabdullah404/social_devlopment_platform) | Grassroots social development & verified neighborhood volunteer events network. |
-| **MatchIQ** | [🔗 Live Demo](https://football-prediction-platform-neon.vercel.app/) | [💻 GitHub](https://github.com/mabdullah404/football_prediction-platform) | AI-powered football intelligence, Poisson prediction models & Gemini tactical reports. |
+| **MatchIQ** | [🔗 Live Demo](https://football-prediction-platform-neon.vercel.app/) | [💻 GitHub](https://github.com/mabdullah404/football_prediction-platform) | Full-stack football analytics platform with Dixon-Coles Poisson prediction models, player intelligence, and tactical pitch lineups. |
 | **News Bangla 24** | [🔗 Live Demo](https://news-bangla-24-o8cr.vercel.app/) | [💻 GitHub](https://github.com/mabdullah404/news-bangla-24) | Full-stack Bengali news portal with real-time ticker marquee and multi-category feeds. |
 | **Bazar Dor** | [🔗 Live Demo](https://bazar-dor-project-omega.vercel.app/) | [💻 GitHub](https://github.com/mabdullah404/bazar-dor-project) | Daily grocery & commodity market price tracking app in Bangladesh. |
 | **Frameora** | *In Development* | [💻 GitHub](https://github.com/mabdullah404) | Curated visual storytelling, photography showcase, and masonry galleries. |
