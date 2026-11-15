@@ -66,9 +66,10 @@ export function ResumeModal({ isOpen, onClose, resumeFileName }: ResumeModalProp
           <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 space-y-2 text-xs dark:border-zinc-800/80 dark:bg-zinc-900/60">
             <p className="font-semibold text-slate-900 dark:text-zinc-200">Summary Highlights:</p>
             <ul className="list-disc pl-4 space-y-1 text-slate-600 dark:text-zinc-400">
+              <li>Web Development Intern — HR SOFT BD (3 Months | 2023)</li>
               <li>B.Sc. in Computer Science &amp; Engineering — BUBT (2025 – Present)</li>
-              <li>Languages &amp; Core: HTML5, CSS3, JavaScript (ES6+), TypeScript, React, Next.js, Tailwind CSS</li>
-              <li>Featured Projects: Bazar Dor, Personal Portfolio Website, CivicPulse, MatchIQ</li>
+              <li>Languages &amp; Core: HTML5, CSS3, JavaScript (ES6+), TypeScript, React.js, Next.js, Tailwind CSS</li>
+              <li>Featured Projects: Bazar Dor, Personal Portfolio, CivicPulse, MatchIQ, Frameora</li>
             </ul>
           </div>
         </div>

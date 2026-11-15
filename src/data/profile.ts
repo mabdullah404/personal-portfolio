@@ -112,7 +112,22 @@ export const educationList: EducationItem[] = [
 ];
 
 export const experienceData = {
-  hasFormalExperience: false,
-  message: "I am actively building real-world projects and full-stack web applications while pursuing my CSE degree at BUBT. I dedicate my time to hands-on development, studying modern frontend architectures, and collaborating on web projects. As soon as verified internships or professional roles are added, they will be listed here.",
-  items: [] as ExperienceItem[]
+  hasFormalExperience: true,
+  message: "Hands-on web engineering experience combining professional agency internship with modern full-stack application development.",
+  items: [
+    {
+      id: "hrsoftbd-intern",
+      title: "Web Development Intern",
+      organization: "HR SOFT BD",
+      period: "3 Months (Internship) | 2023",
+      isVerified: true,
+      description: "Completed an intensive 3-month web development internship at HR SOFT BD, gaining hands-on industry experience in frontend development, component-based architectures with React.js, and crafting responsive user interfaces.",
+      highlights: [
+        "Completed a three-month web development internship at HR SOFT BD.",
+        "Gained practical experience in HTML, CSS, and JavaScript for frontend development.",
+        "Worked with React.js and learned component-based frontend development.",
+        "Developed foundational knowledge of building responsive and interactive web interfaces."
+      ]
+    }
+  ] as ExperienceItem[]
 };
