@@ -15,7 +15,7 @@ export const profileData: ProfileData = {
     github: "https://github.com/mabdullah404",
     linkedin: "https://linkedin.com/in/mabdullah77/",
     twitter: "https://x.com/mabdullah77d",
-    facebook: "https://facebook.com/mabdullah77",
+    facebook: "https://www.facebook.com/aabbdduullllaahh444785",
     email: "mabdullah539629@gmail.com",
     phone: "+880 1717-697404",
     whatsapp: "+880 1717-697404",
