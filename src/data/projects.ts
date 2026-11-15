@@ -167,40 +167,41 @@ export const projectsData: Project[] = [
     id: "frameora",
     slug: "frameora",
     title: "Frameora",
-    tagline: "Curated Visual Storytelling & Photography Platform (In Development)",
-    shortDescription: "A visual portfolio and photography showcase platform currently under active development, emphasizing immersive dark aesthetics, high-res images, and seamless masonry layouts.",
-    detailedOverview: "Frameora is an ongoing creative web project engineered to celebrate visual art, photography collections, and digital media portfolios. Designed with an editorial aesthetic, Frameora offers a distraction-free environment where image details, aspect ratios, and visual narratives take center stage.",
+    tagline: "Curated Visual Storytelling & High-Performance Photography Platform",
+    shortDescription: "A modern visual photography and creative media platform engineered with Next.js 16, React 19, Better Auth, and MongoDB for seamless image discovery, lightbox curation, and creator portfolios.",
+    detailedOverview: "Frameora is an immersive full-stack photography platform engineered to showcase high-resolution visual art, photo stories, and curated creative collections. Built using Next.js 16 App Router, React 19, and Tailwind CSS v4, Frameora integrates Better Auth for secure user sessions, MongoDB for photo and metadata persistence, and interactive crop & lightbox modals for a polished media experience.",
     image: "/images/projects/frameora.svg",
-    imageAlt: "Frameora photography showcase layout preview",
-    technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "CSS Grid", "Image Optimization"],
-    status: "In Development",
+    imageAlt: "Frameora photography showcase and curation platform preview",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Better Auth", "MongoDB", "Lucide Icons"],
+    status: "Completed",
     featured: true,
-    liveUrl: "", 
-    githubUrl: "https://github.com/mabdullah404",
+    liveUrl: "https://frameora-delta.vercel.app", 
+    githubUrl: "https://github.com/mabdullah404/Frameora",
     keyFeatures: [
-      "Dynamic masonry and editorial grid layouts accommodating varying aspect ratios",
-      "Smooth modal lightbox with keyboard shortcuts for intuitive image viewing",
-      "Category tags for landscape, portrait, street, and architectural photography",
-      "Adaptive loading states and low-quality image placeholders (LQIP) to avoid layout shifts",
-      "Modern dark aesthetic that highlights image colors and contrast"
+      "Dynamic photo gallery feed with category-based filtering and instant search",
+      "Robust user authentication and profile management powered by Better Auth",
+      "Interactive photo upload modal with client-side image cropping and tag metadata",
+      "Immersive lightbox viewer with keyboard navigation, full-screen view, and photo favoriting",
+      "Photo stories and editorial visual narratives with dedicated reader routes",
+      "Dark and light theme toggling with zero layout shifts and responsive masonry grid"
     ],
     challenges: [
-      "Handling heterogeneous image dimensions without breaking grid alignment or cropping focal points unintentionally.",
-      "Optimizing load performance for high-resolution photographs on slower network connections.",
-      "Maintaining smooth transitions when expanding images into full-screen view."
+      "Integrating Next.js 16 App Router with React 19 client components and Better Auth session cookies.",
+      "Ensuring responsive masonry image feeds without cumulative layout shift (CLS) across mobile and desktop devices.",
+      "Implementing client-side image cropping and aspect ratio enforcement before uploading to MongoDB storage."
     ],
     solutions: [
-      "Designed responsive CSS Grid masonry patterns paired with aspect-ratio utilities.",
-      "Used Next.js Image component with modern WebP formatting, responsive srcset, and blurred placeholder states.",
-      "Kept UI elements lightweight and minimal to ensure that the browser engine prioritizes media decoding."
+      "Architected clean Next.js route handlers and server actions interacting with MongoDB collections.",
+      "Utilized custom skeleton loaders and responsive aspect-ratio wrappers to ensure smooth visual rendering.",
+      "Implemented a modular ImageCropModal component providing instantaneous visual feedback before save."
     ],
     improvements: [
-      "Add EXIF data display overlay (camera model, shutter speed, ISO, aperture) for photography enthusiasts.",
-      "Implement client-side collection bookmarking using browser LocalStorage."
+      "Add EXIF metadata extraction to display camera gear, ISO, aperture, and shutter speed for photographers.",
+      "Incorporate multi-image upload queues and album grouping capabilities."
     ],
     futurePlans: [
-      "Build a creator upload dashboard with cloud asset integration (e.g., Cloudinary or Supabase Storage).",
-      "Add social sharing cards with dynamic OpenGraph image generation for featured shots."
+      "Integrate creator monetization, high-resolution print licensing, and custom watermark controls.",
+      "Develop collaborative photo collections and community curation voting."
     ]
   }
 ];
