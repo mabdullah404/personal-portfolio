@@ -45,9 +45,9 @@ export function Experience() {
               <div className="shrink-0 w-full md:w-auto">
                 <Link
                   href="/#projects"
-                  className="w-full md:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-slate-100 border border-slate-300 px-5 py-3 text-xs font-bold uppercase tracking-wider text-slate-800 hover:text-slate-950 hover:bg-slate-200 transition-all dark:bg-zinc-900 dark:border-zinc-800 dark:text-zinc-200 dark:hover:text-white dark:hover:border-red-500/40 dark:hover:bg-zinc-850"
+                  className="w-full md:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-red-600 hover:bg-red-700 px-5 py-3 text-xs font-bold uppercase tracking-wider text-white transition-all shadow-md shadow-red-600/20 hover:shadow-red-600/30 focus:outline-none focus:ring-2 focus:ring-red-500"
                 >
-                  <SparklesIcon size={14} className="text-red-600 dark:text-red-400" />
+                  <SparklesIcon size={14} className="text-white" />
                   <span>Inspect Built Projects</span>
                   <ArrowRightIcon size={14} />
                 </Link>
