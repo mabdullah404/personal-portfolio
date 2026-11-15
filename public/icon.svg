@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#090a0f"/>
+    </linearGradient>
+    <linearGradient id="redDot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circular Badge -->
+  <circle cx="32" cy="32" r="30" fill="url(#bg)" stroke="#27272a" stroke-width="2"/>
+
+  <!-- Bold Modern 'A' path (centered at x=26.5) -->
+  <path d="M 26.5 14.5 L 14 47.5 L 21 47.5 L 23.8 40 L 31.2 40 L 34 47.5 L 41 47.5 Z M 27.5 24.5 L 29.9 34.5 L 25.1 34.5 Z" fill="#ffffff" fill-rule="evenodd" filter="url(#shadow)"/>
+
+  <!-- Signature Brand Crimson Red Dot '.' (at x=48.5, y=43.5) -->
+  <circle cx="48.5" cy="43.5" r="4.2" fill="url(#redDot)"/>
+</svg>
