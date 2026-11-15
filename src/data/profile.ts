@@ -6,7 +6,7 @@ export const profileData: ProfileData = {
   brandName: "Abdullah",
   designation: "Full Stack & Frontend Developer",
   tagline: "CSE undergraduate passionate about building responsive, modern web applications, clean user interfaces, and continuous full-stack learning.",
-  location: "Dhaka, Bangladesh",
+  location: "Mirpur-12, Dhaka, Bangladesh",
   availability: "Open for Opportunities & Collaborations",
   photoUrl: "/images/profile/abdullah.jpg",
   resumeFileName: "Abdullah-Resume.pdf",
@@ -82,7 +82,7 @@ export const educationList: EducationItem[] = [
     institution: "Bangladesh University of Business and Technology (BUBT)",
     degree: "Bachelor of Science in Computer Science and Engineering (CSE)",
     status: "Current",
-    datesPlaceholder: "Currently Enrolled (Undergraduate Program)",
+    datesPlaceholder: "2025 – Present",
     location: "Mirpur, Dhaka, Bangladesh",
     description: "Deepening theoretical foundations in computer science, software engineering methodologies, data structures, algorithms, and advanced engineering concepts while building practical software projects.",
     keyAreas: [
